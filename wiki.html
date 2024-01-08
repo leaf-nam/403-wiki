@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoachME WIKI</title>
+    <link
+      me-3
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+      body {
+        font-family: "Nanum Gothic", sans-serif;
+      }
+      h1 {
+        margin-top: 30px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body style="margin-top: 30px">
+    <header class="fixed-top" style="height: 60px">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link me-3" href="#main">MAIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="#api">API</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="#code-convention">코드 컨벤션</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="#commit-convention"
+                  >커밋 컨벤션</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="#jira-convention">지라 컨벤션</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="#communication">소통</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="#frontend-detailed-converntion"
+                  >프론트엔드 컨벤션</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-3" href="#backend-detailed-converntion"
+                  >백엔드 컨벤션</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div style="display: grid; justify-content: center">
+      <section class="container">
+        <div id="main">
+          <h1>Main</h1>
+          <h4>&#x2B50;프로젝트 명</h4>
+          <ul>
+            <li><h5>코치미(Coach Me)</h5></li>
+          </ul>
+          <hr />
+          <h4>&#x2B50;프로젝트 주제</h4>
+          <ul>
+            <li><h5>화상회의를 활용한 구독 교육 서비스</h5></li>
+          </ul>
+          <hr />
+          <h4>&#x261D; 팀 규칙</h4>
+
+          <ul>
+            <li>이슈나 문제, 완료 등 가감없이 공유하기 서로 연락 잘받기</li>
+            <li>궁금하게 안하기 일과(9 ~ 6)에 100% 집중하기</li>
+            <li>일과 외 추가로 모일 시 사전에 소통하기</li>
+            <li>[차후]집중시간 / 소통시간</li>
+            <li>
+              정하기 명세를 최우선으로 하되, 추가적인 기능은 미리 설계하고
+              추후에 확장하기
+            </li>
+          </ul>
+          <hr />
+        </div>
+        <div id="api">
+          <h1>API</h1>
+          <ul>
+            <li>
+              <h4>스펙 설계 : postman</h4>
+            </li>
+          </ul>
+        </div>
+        <div id="code-convention">
+          <h1>Code Convention</h1>
+          <ol>
+            <!-- boolean -->
+            <li>
+              <h4>boolean</h4>
+
+              <ul>
+                <li>
+                  <p>boolean은 is/has 등 be동사로 시작해야 한다.</p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <!-- 들여쓰기 -->
+            <li>
+              <h4>들여쓰기 : 탭 vs 띄어쓰기</h4>
+
+              <ul>
+                <li>
+                  <p>들여쓰기는 띄어쓰기 2칸으로 통일한다.</p>
+                </li>
+                <li>
+                  <p>
+                    필요시 에디터에서 탭 키를 띄어쓰기 2칸으로 수정해서
+                    사용한다.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <!-- 주석 -->
+            <li>
+              <h4>주석 : // vs /** */</h4>
+
+              <ul>
+                <li>
+                  <p>// : 1줄 주석 작성시에만 사용한다.</p>
+                </li>
+                <li>
+                  <p>/** */ : 2줄 이상 주석은 반드시 해당 주석을 사용한다.</p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <!-- 중복 -->
+            <li>
+              <h4>중복 : 클래스 내부 메서드, 변수 등</h4>
+
+              <ul>
+                <li>
+                  <p>중복 클래스는 생략한다.</p>
+                  <p>ex)</p>
+                  <p>X)</p>
+                  <p>class Car {</p>
+                  <p style="padding-left: 3em">boolean isCarExtend;</p>
+                  <p>}</p>
+                  <p>O)</p>
+                  <p>class Car {</p>
+                  <p style="padding-left: 3em">boolean isExtend;</p>
+                  <p>}</p>
+                </li>
+                <li>
+                  <p>기타 중복 규칙은 FE/BE 별로 정한다.</p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <!-- etc -->
+            <li>
+              <h4>기타</h4>
+
+              <ul>
+                <li>
+                  <p>
+                    클래스명, 변수, 메서드, 반복문, 조건문 등은 프론트 /
+                    백엔드끼리 논의
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <ul></ul>
+        </div>
+        <div id="commit-convention">
+          <h1>Commit Convention</h1>
+          <ol>
+            <li>
+              <h4>feat : 새로운 기능 추가</h4>
+            </li>
+            <ul>
+              <li>
+                <p>git commit -m "feat: 회원가입 시 이메일 인증 기능 추가"</p>
+                <p>
+                  새로운 사용자가 등록할 때, 이메일을 통한 인증 단계를 추가함.
+                  이제 사용자는 등록 후 이메일 링크를 클릭하여 계정을 활성화할
+                  수 있음.
+                </p>
+              </li>
+            </ul>
+            <hr />
+            <li>
+              <h4>fix : 버그 수정</h4>
+            </li>
+            <ul>
+              <li>
+                <p>git commit -m "fix: 시작 시 응용 프로그램 충돌 버그 해결"</p>
+                <p>
+                  응용 프로그램이 시작될 때 발생하는 특정 상황에서 발생하는 충돌
+                  버그를 해결. 이제 응용 프로그램은 정상적으로 시작됨.
+                </p>
+              </li>
+            </ul>
+            <hr />
+            <li>
+              <h4>docs : 문서 수정</h4>
+            </li>
+            <ul>
+              <li>
+                <p>
+                  git commit -m "docs: 새로운 API 엔드포인트에 대한 상세 문서
+                  업데이트"
+                </p>
+                <p>
+                  새로운 API 엔드포인트의 기능, 파라미터 및 응답에 대한 상세한
+                  문서를 추가. 개발자들은 이를 통해 새로운 기능을 더 쉽게 적용할
+                  수 있음.
+                </p>
+              </li>
+            </ul>
+            <hr />
+            <li>
+              <h4>style : 코드 포맷팅, 세미콜론 누락, 코드 변경이 없는 경우</h4>
+            </li>
+            <ul>
+              <li>
+                <p>
+                  git commit -m "style: main.js 파일의 코드 스타일 일관성 수정"
+                </p>
+                <p>
+                  main.js 파일의 코드 스타일을 Prettier를 사용하여 일관성 있게
+                  수정. 들여쓰기 및 세미콜론이 올바르게 적용.
+                </p>
+              </li>
+            </ul>
+            <hr />
+            <li>
+              <h4>refactor : 코드 리펙토링</h4>
+            </li>
+            <ul>
+              <li>
+                <p>
+                  git commit -m "refactor: 사용자 유효성 검사를 위한 코드
+                  리펙토링"
+                </p>
+                <p>
+                  사용자 유효성을 검사하는 부분을 단순화하고 중복 코드를
+                  제거하여 유지보수성을 향상시킴.
+                </p>
+              </li>
+            </ul>
+            <hr />
+            <li>
+              <h4>test : 테스트 코드, 리펙토링 테스트 코드 추가</h4>
+            </li>
+            <ul>
+              <li>
+                <p>
+                  git commit -m "test: 사용자 인증에 대한 새로운 통합 테스트
+                  추가"
+                </p>
+                <p>
+                  보안 강화 및 안정성 향상을 위해 사용자 인증 부분에 대한 새로운
+                  통합 테스트를 추가.
+                </p>
+              </li>
+            </ul>
+            <hr />
+            <li>
+              <h4>chore : 빌드 업무 수정, 패키지 매니저 수정</h4>
+            </li>
+            <ul>
+              <li>
+                <p>
+                  git commit -m "chore: 프로덕션 배포를 위한 빌드 스크립트
+                  업데이트"
+                </p>
+                <p>
+                  프로덕션 배포 시 필요한 빌드 스크립트를 최적화하여 배포
+                  프로세스를 더욱 신속하고 안정적으로 만듦.
+                </p>
+              </li>
+            </ul>
+            <hr />
+          </ol>
+        </div>
+        <div id="jira-convention">
+          <h1>Jira Convention</h1>
+          <ol>
+            <li>
+              <h4>에픽 :</h4>
+              <ul>
+                <li>
+                  <p>에픽 예시</p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li>
+              <h4>스토리 :</h4>
+              <ul>
+                <li>
+                  <p>스토리 예시</p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li>
+              <h4>태스크 :</h4>
+              <ul>
+                <li>
+                  <p>태스크 예시</p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li>
+              <h4>버그 :</h4>
+              <ul>
+                <li>
+                  <p>버그 예시</p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+          </ol>
+        </div>
+        <div class="section" id="communication">
+          <h1>소통</h1>
+          <ol>
+            <li>
+              <h4>온라인 미팅</h4>
+              <ul>
+                <li>
+                  <p>디스코드</p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li>
+              <h4>회의록</h4>
+              <ul>
+                <li>
+                  <p>노션</p>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <div class="section" id="frontend-detailed-converntion">
+          <h1>프론트엔드 세부 컨벤션</h1>
+          <ol>
+            <li>
+              <h4>에디터</h4>
+              <ul>
+                <li>
+                  <p>
+                    vs code<br />
+                    prettier + Eslint
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li>
+              <h4>클래스 / 변수 / 메서드 / 반복문 / 조건문</h4>
+              <ul>
+                <li>
+                  <p></p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li>
+              <h4>디렉터리 구조</h4>
+              <ul>
+                <li>
+                  <p></p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+          </ol>
+        </div>
+        <div class="section" id="backend-detailed-converntion">
+          <h1>백엔드 세부 컨벤션</h1>
+          <ol>
+            <li>
+              <h4>에디터</h4>
+              <ul>
+                <li>
+                  <p>인텔리제이</p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li>
+              <h4>클래스 / 변수 / 메서드 / 반복문 / 조건문</h4>
+              <ul>
+                <li>
+                  <p></p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+            <li>
+              <h4>디렉터리 구조</h4>
+              <ul>
+                <li>
+                  <p></p>
+                </li>
+              </ul>
+            </li>
+            <hr />
+          </ol>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
