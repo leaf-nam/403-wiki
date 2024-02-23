@@ -4,12 +4,14 @@
 
 ## 위키 실행방법
 
-### 1. 기존 Wiki Page
-#### - wiki html file
-#### - 실행 : 해당 HTML 브라우저에서 직접 실행
+### 1. 기존 Wiki Page : wiki html file
+#### - 실행 : HTML 다운로드 후 브라우저에서 직접 실행
+```
+# html 경로
+{Repository root directory}/wiki.html
+```
 
-### 2. Vue.js Wiki Page
-#### - local wiki server
+### 2. Vue.js Wiki Page : local wiki server
 #### - 실행
 ##### 1. 현재 Repository clone
 - if) 현재 레포지토리 clone 시
