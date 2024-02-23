@@ -11,7 +11,20 @@
 ### 2. Vue.js Wiki Page
 #### - local wiki server
 #### - 실행
-1. 현재 Repository fork 혹은 clone
+1. 현재 Repository clone
+``` git
+
+# if) 레포지토리 clone
+git clone https://github.com/SangyeopNam/403-wiki.git
+
+# else) origin 설정 후 fetch 시
+git remote add origin https://github.com/SangyeopNam/403-wiki.git
+git fetch origin main
+git checkout main
+
+# fork 시
+fork 후 본인 레포지토리에서 위 절차 동일하게 수행(레포지토리 경로만 본인 경로로 수정)
+```
 2. 로컬 레포지토리에서 vue source file 메인경로로 이동 후 vite server 실행
 ```
 cd {Repository root directory}
@@ -19,7 +32,7 @@ cd docs
 npm install
 npm run dev
 ```
-3. 로컬 레포지토리에서 file server 메인경로로 이동 후 node.js server 실행
+3. 로컬 레포지토리에서 file server 메인경로로 이동 후 node.js server 실행  * 2.에서 실행된 vite는 그대로 두고, 새 창에서 실행해야 합니다.
 ```
 cd {Repository root directory}
 cd fileserver
