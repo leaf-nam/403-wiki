@@ -14,10 +14,10 @@
 1. 현재 Repository clone
 ``` git
 
-# if) 레포지토리 clone
+# if) 현재 레포지토리 clone 시
 git clone https://github.com/SangyeopNam/403-wiki.git
 
-# else) origin 설정 후 fetch 시
+# else if) origin 설정 후 fetch 시
 git remote add origin https://github.com/SangyeopNam/403-wiki.git
 git fetch origin main
 git checkout main
