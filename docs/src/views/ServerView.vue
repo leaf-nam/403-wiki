@@ -1,6 +1,6 @@
 <script setup>
 import SideIndex from '../components/SideIndex.vue'
-const FILESERVER_IP = '70.12.246.246'
+const FILESERVER_IP = 'localhost'
 const FILESERVER_PORT = 1235
 const indexes = [
   { id: 'ssh', title: 'SSH접속' },

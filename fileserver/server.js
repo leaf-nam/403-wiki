@@ -6,7 +6,7 @@ import path from "path";
 
 const __dirname = path.resolve();
 const app = express();
-const HOST_IP = "70.12.246.246";
+const HOST_IP = "localhost";
 const PORT = 1235;
 
 // Cors 설정

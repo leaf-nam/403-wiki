@@ -1,7 +1,7 @@
 <script setup>
 import axios from 'axios'
 import { ref, onBeforeMount } from 'vue'
-const FILESERVER_IP = '70.12.246.246'
+const FILESERVER_IP = 'localhost'
 const FILESERVER_PORT = 1235
 const upload = async () => {
   const files = document.getElementById('minuteFile').files
