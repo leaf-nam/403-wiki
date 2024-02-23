@@ -19,7 +19,7 @@ const sshDocument = [
   },
   {
     title: '인증용 개인키 다운로드',
-    details: ['아래 링크로 개인키를 다운로드 받습니다.', '* 해당 키는 외부유출 금지입니다!!'],
+    details: ['아래 링크로 개인키를 다운로드 받습니다.', '* 해당 키는 보안 이슈로 삭제되었습니다.'],
     link: `http://${FILESERVER_IP}:${FILESERVER_PORT}/uploads/files/i10A403T.pem`
   },
   {
