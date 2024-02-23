@@ -12,17 +12,20 @@
 #### - local wiki server
 #### - 실행
 1. 현재 Repository clone
-``` git
+- if) 현재 레포지토리 clone 시
+```
+$ git clone https://github.com/SangyeopNam/403-wiki.git
+```
 
-# if) 현재 레포지토리 clone 시
-$git clone https://github.com/SangyeopNam/403-wiki.git
+- else if) origin 설정 후 fetch 시
+```
+$ git remote add origin https://github.com/SangyeopNam/403-wiki.git
+$ git fetch origin main
+$ git checkout main
+```
 
-# else if) origin 설정 후 fetch 시
-$git remote add origin https://github.com/SangyeopNam/403-wiki.git
-$git fetch origin main
-$git checkout main
-
-# fork 시
+- fork 시
+```
 fork 후 본인 레포지토리에서 위 절차 동일하게 수행(레포지토리 경로만 본인 경로로 수정)
 ```
 
