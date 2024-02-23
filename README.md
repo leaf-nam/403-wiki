@@ -2,8 +2,6 @@
 
 # 403 WIKI PAGE
 
-## 프로젝트명 : CoachME
-
 ## 위키 실행방법
 
 ### 1. 기존 Wiki Page
