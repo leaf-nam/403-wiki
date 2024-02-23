@@ -13,15 +13,15 @@
 ### 2. Vue.js Wiki Page
 #### - local wiki server
 #### - 실행
-1. 현재 Repository fork
-2. 레포지토리에서 vue source file 메인경로로 이동 후 vite server 실행
+1. 현재 Repository fork 혹은 clone
+2. 로컬 레포지토리에서 vue source file 메인경로로 이동 후 vite server 실행
 ```
 cd {Repository root directory}
 cd docs
 npm install
 npm run dev
 ```
-3. 레포지토리에서 file server 메인경로로 이동 후 node.js server 실행
+3. 로컬 레포지토리에서 file server 메인경로로 이동 후 node.js server 실행
 ```
 cd {Repository root directory}
 cd fileserver
