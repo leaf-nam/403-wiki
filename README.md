@@ -1,5 +1,6 @@
-# 403 WIKI PAGE
 ![6](https://github.com/SangyeopNam/403-wiki/assets/119817396/50765550-5910-4cad-8c5f-61870b008ea3)
+
+# 403 WIKI PAGE
 
 ## 프로젝트명 : CoachME
 
